@@ -1,7 +1,7 @@
 # github-style-remaster
 Modified version of the Hugo theme, Github-Style, to fit my personal static pages theme
 
-# Sobre | About
+# Sobre // About
 
 Este projeto é uma adaptação de um já existente, um tema no estilo GitHub para a criação de blogs estáticos utilizando Hugo. O tema original foi criado por MeiK2333 e eu o modifiquei para se adequar ao meu projeto. Realizei correções de alguns bugs e personalizei o site de acordo com minhas preferências, incluindo a adição de um menu próprio que será padrão em todas as páginas do meu site no GitHub. Adicionei também funções novas e modifiquei funções já existentes, como ter colocado a alternância entre os temas Dark/Light para o meu menu e deixei um botão desse na versão mobile também dentro do menu do github style para facilitar. Todos os créditos ao criador original do tema são devidos, além dos meus próprios pela remasterização, caso alguém decida utilizá-lo. Planejo utilizar este tema na nova versão do meu acervo pessoal, disponibilizado através do GitHub Pages.
 
@@ -287,9 +287,11 @@ Then you can verify the site is working and use `git push --all` to push the cha
 ## Credits
 
 - MeiK2333 - Github Style
+  
 [![Github](https://img.shields.io/website?label=github+Repository&style=for-the-badge&url=https://github.com/MeiK2333/github-style)](https://github.com/MeiK2333/github-style)
 
 
 - MLaidler - Github Style Remaster
+  
 [![Github](https://img.shields.io/website?label=github+Repository&style=for-the-badge&url=https://github.com/matheuslaidler/github-style-remaster)](https://github.com/matheuslaidler/github-style-remaster)
 
