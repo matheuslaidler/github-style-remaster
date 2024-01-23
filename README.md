@@ -1,6 +1,8 @@
 # Github MLaidler Style - Remaster Hugo Theme
 Modified version of the Hugo theme, Github-Style, to fit my personal static pages theme
 
+ - If you want to modify my menu, u can go on and edit the html file: 'layouts/partials/header.html'
+ 
 # Sobre // About
 
 Este projeto é uma adaptação de um já existente, um tema no estilo GitHub para a criação de blogs estáticos utilizando Hugo. O tema original foi criado por MeiK2333 e eu o modifiquei para se adequar ao meu projeto. Realizei correções de alguns bugs e personalizei o site de acordo com minhas preferências, incluindo a adição de um menu próprio que será padrão em todas as páginas do meu site no GitHub. Adicionei também funções novas e modifiquei funções já existentes, como ter colocado a alternância entre os temas Dark/Light para o meu menu e deixei um botão desse na versão mobile também dentro do menu do github style para facilitar. Todos os créditos ao criador original do tema são devidos, além dos meus próprios pela remasterização, caso alguém decida utilizá-lo. Planejo utilizar este tema na nova versão do meu acervo pessoal, disponibilizado através do GitHub Pages.
