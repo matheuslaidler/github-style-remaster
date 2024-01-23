@@ -44,9 +44,28 @@ git submodule add git@github.com:matheuslaidler/github-style-remaster.git themes
 
 or download and drag the folder "github-style-remaster" to "themes".
 
-(rename your previous `posts` folder to `post` to use our theme)
+If you're inside your hugo's root folder with command...
 
-## Update the theme
+You can just go to the 'themes' folder and clone this repository inside.
+
+```bash
+cd themes
+git clone https://github.com/matheuslaidler/github-style-remaster.git
+```
+
+PS: Rename your previous `posts` folder to `post` to use our theme - inside `content`
+
+## Setting your hugo theme
+
+Edit your config.toml / hugo.toml
+
+Edit/Add the "theme" value;
+
+`theme = "github-style-remaster"`
+
+-- don't forget to add your url on 'baseURL'
+
+## Update the theme (not needed)
 
 If you just installed the theme, it is already in the latest version. If not, you can update using the below commands
 
@@ -69,13 +88,12 @@ hugo new readme.md
 echo '`Hello World!`' > content/readme.md
 ```
 
-## Pin post
+## LocalHost -  Previewing your new hugo site
 
+```bash
+hugo server -D
 ```
----
-pin: true
----
-```
+(or just hugo server)
 
 ## Add new post
 
@@ -84,6 +102,15 @@ Hugo will create a post with `draft: true`, change it to false in order for it t
 ```
 hugo new post/title_of_the_post.md
 ```
+
+## Pin post
+
+```
+---
+pin: true
+---
+```
+
 
 ## Limit display content
 
