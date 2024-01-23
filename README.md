@@ -16,7 +16,9 @@ This project is an adaptation of an existing one, a GitHub-style theme for creat
 ## Requirements
 
 Hugo installed... // Hugo instalado...
+
 You may need to use git // Talvez - provavelmente - precisará usar o git (isso depende de como vc vai fazer seu site)
+
 You can use those command lines with something like Win Powershell or any Linux Terminal // use powershell ou terminal
 
 ## Tutorial
