@@ -1,4 +1,4 @@
-# github-style-remaster
+# Github MLaidler Style - Remaster Hugo Theme
 Modified version of the Hugo theme, Github-Style, to fit my personal static pages theme
 
 # Sobre // About
