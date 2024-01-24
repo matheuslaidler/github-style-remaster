@@ -57,6 +57,11 @@ git clone https://github.com/matheuslaidler/github-style-remaster.git
 
 PS: Rename your previous `posts` folder to `post` to use our theme - inside `content`
 
+```bash
+cd <you-project-folder>
+mv content/posts content/post
+```
+
 ## Setting your hugo theme
 
 Edit your config.toml / hugo.toml
@@ -76,12 +81,14 @@ cd themes/github-style-remaster
 git pull
 ```
 
-Then, you need to rename the previous `posts` folder to `post` again if needed.
+If you installed the theme as a submodule;
 
 ```bash
-cd <you-project-folder>
-mv content/posts content/post
+# Update to the latest version
+git submodule update --remote
 ```
+
+Then see if needed to rename the previous `posts` folder to `post` again.
 
 ## Setup readme
 
