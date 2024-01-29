@@ -10,14 +10,18 @@ pygmentsUseClasses = true
 [params]
   author = "Matheus Laidler"
   description = "Projeto que auxilia no aprendizado de conteúdos via divulgação científica, com materiais sobre o mundo da tecnologia e hacking."
-  avatar = "../../images/perfil.jpg" #../../ para possíveis abas q não consigam achar a imagem, mas já foi corrigido a maioria diretamente no codigo.
+  avatar = "images/perfil.jpg" #pode colocar ../../ antes para caso não consiga achar a imagem, mas esse problema já foi corrigido no codigo.
   github = "matheuslaidler"
-  facebook = "matheus.laidler"
-  twitter = "matheuslaidler"
-  linkedin = "laidlervidal"
+  medium = "matheuslaidler"
+  gitbook = "matheuslaidler"
+  #stackoverflow = "23312896"
   instagram = "matheuslaidler"
-  #tumblr = "#"
   youtube = "@matheuslaidler" #/channel/UCkFbbZX6TG6eZPugmW32YFA/
+  gitlab = "matheuslaidler"
+  #linkedin = "laidlervidal"
+  #facebook = "matheus.laidler"
+  #twitter = "matheuslaidler"
+  email = "matheuslaidler@protonmail.com"
   email = "matheuslaidler@protonmail.com"
   url = "https://matheuslaidler.github.io" #se não colocar ficará como o link do site raiz
   keywords = "matheus laidler, matheuslaidler, matheus-laidler, mlaidler, cibersegurança, wayofsecurity, wayofsec, road2tech, road2technology, acervo de TI, artigos, write ups, blog"
@@ -42,10 +46,10 @@ pygmentsUseClasses = true
     distractionFreeMode = false # Enable hot key (cmd|ctrl + enter) submit comment.    
     proxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token" # 可以自行添加反向代理
   
-  [[params.links]] #um icone novo para algo - abaixo do perfil
-    title = "Rascunhos"
-    href = "https://matheuslaidler.gitbook.io"
-	# icon = "images/icone.png" #sem nada => icone padrão de link => "/images/link.png"
+  #[[params.links]]
+    #title = "Algo"
+    #href = "#"
+    #icon = "images/icone.png" #sem nada => icone padrão => "/images/link.png"
 
 
 [frontmatter]
