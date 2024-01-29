@@ -11,5 +11,5 @@ features = ["google analytics"]
 min_version = "0.41"
 
 [author]
-  name = "M Laidler"
+  name = "Matheus Laidler"
   homepage = "https://github.com/matheuslaidler"
