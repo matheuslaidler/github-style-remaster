@@ -10,7 +10,7 @@ pygmentsUseClasses = true
 [params]
   author = "Matheus Laidler"
   description = "Projeto que auxilia no aprendizado de conteúdos via divulgação científica, com materiais sobre o mundo da tecnologia e hacking."
-  avatar = "images/perfil.jpg" #pode colocar ../../ antes para caso não consiga achar a imagem, mas esse problema já foi corrigido no codigo.
+  avatar = "../images/perfil.jpg" #pode colocar ../../ antes para caso ainda não consiga achar a imagem, mas esse problema já é corrigido com o "../" fazendo aparecer na apa Post sem problema... deu para corrigir no codigo, mas tendo q usar um padrão de nome e extensão. resolvi deixar como tava e mudar por aq e ter liberdade.
   github = "matheuslaidler"
   medium = "matheuslaidler"
   gitbook = "matheuslaidler"
