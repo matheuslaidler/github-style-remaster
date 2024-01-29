@@ -1,16 +1,14 @@
 <!-- https://icons.getbootstrap.com/
-        buscar o que quiser - d=""    -->
+        buscar o que quiser para d=""    -->
+
 <!-- menu desktop/mobile - matheus laidler: creditos> matheuslaidler.github.io -->
 <nav id="cssmenu">
-  <!-- Topo da página com a Logo -->
   <table width="auto" border="0" align="left"> 
     <tbody>
      <tr>  
-      <td> <!-- menu type logo 0 - official / falta fzr a logo nova com a fonte de programador q é mais fácil e ler e colocar a imagem como gif logo como terminal
-      ent usar essa imagem do menu 1 como base e reescrever o matheus laidler como terminal e tudo junto ou com underline -->
-        <a href="{{ .Site.BaseURL }}" title="matheuslaidler" target="_parent">
-				  <img width="75%" top="1.225vh" left="15vh" align="left" border="0" src="{{ .Site.BaseURL }}/images/menu/matheuslaidler.gif"/></a>
-          <!-- nao mais utiliza underline e underlaidler do css, pode tirar se quiser ou manter caso queira reusar -->
+      <td>
+        <a href="{{ .Site.BaseURL }}" title="matheuslaidler" target="_parent"> <!-- {{ "images/menu/matheuslaidler.gif" | absURL }} == {{ .Site.BaseURL }}/images/menu/matheuslaidler.gif -->
+				  <img width="75%" top="1.225vh" left="15vh" align="left" border="0" src="{{ "images/menu/matheuslaidler.gif" | absURL }}"/></a>
       </td> 
       </tbody>
     </table> 
@@ -22,27 +20,28 @@
   <ul>
     <li class="active"><a href="{{ .Site.BaseURL }}">Acervo</a></li>
     <li><a href="https://github.com/matheuslaidler" target="_blank">Github</a></li>
-    <li><a href="https://matheuslaidler.github.io/Cryptool/" data-toggle="dropdown">Cryptool</a> <!-- tool --></li>
+    <li><a href="https://matheuslaidler.github.io/Cryptool/" target="_blank">Cryptool</a> <!-- tool --></li>
     <li class="has-sub">
     <a href="#pages" data-toggle="dropdown">Páginas</a>
     <ul>
+      <li><a href="https://github.com/matheuslaidler" target="_blank">Github</a></li>
       <li><a href="https://matheuslaidler.gitbook.io/" target="_blank">Rascunhos</a></li> <!-- articles/drafts/sketches -->
-      <li><a href="https://road2tech.github.io/" target="_blank">Road2Tech</a></li> <!--  -->
-      <li><a href="https://wayofsec.github.io/" target="_blank">WayOfSec</a></li> <!--  -->
-      <li><a href="https://youtube.com/@matheuslaidler" target="_blank">Youtube</a></li>
+      <li><a href="https://road2tech.github.io/" target="_blank">Road2Tech</a></li> <!-- projeto1 -->
+      <li><a href="https://wayofsec.github.io/" target="_blank">WayOfSec</a></li> <!-- projeto2 -->
+      <li><a href="https://youtube.com/@matheuslaidler" target="_blank">Youtube</a></li> <!-- projeto3 -->
     </ul>
       </li>
       <li class="has-sub">
-      <a href="#" data-toggle="dropdown">Doação</a> <!-- donates -->
+      <a href="#donates" data-toggle="dropdown">Doação</a> <!-- donates -->
       <ul>
-        <li><a href="https://github.com/sponsors/matheuslaidler" target="_blank" title="Github Sponsor">Via Github Sponsor</a></li>
+        <li><a href="https://github.com/sponsors/matheuslaidler" target="_blank" title="Github Sponsor">Github Sponsor</a></li>
         <li class="has-sub">
-          <!-- my paypal links: 
-          https://www.paypal.com/donate/?hosted_button_id=SJYYS28HZPU9A
-          https://www.paypal.com/donate/?hosted_button_id=55KGKSTYDTDCS
-          -->
-          <a href="https://www.paypal.com/donate/?hosted_button_id=SJYYS28HZPU9A" title="Paypal">Via PayPal</a>
-      <ul><center><!-- paypal -->
+          <a href="https://www.paypal.com/donate/?hosted_button_id=SJYYS28HZPU9A" title="Paypal">PayPal</a>
+            <!-- my paypal links: 
+            https://www.paypal.com/donate/?hosted_button_id=SJYYS28HZPU9A
+            https://www.paypal.com/donate/?hosted_button_id=55KGKSTYDTDCS
+            -->
+      <ul><center><!-- paypal pop-up -->
       <div id="donate-button-container">
         <div id="donate-button" ></div>
         <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
@@ -62,10 +61,16 @@
       </li>
       </ul>
     </li>
-    <li class="has-sub"><a href="#ptbr" target="_parent" data-toggle="dropdown"><img class="idioma" src="{{ .Site.BaseURL }}/images/btns/portuguese.png" title="portuguese"/></a>
-      <ul>
-        <li><a href="#index-en.html" target="_parent"><img class="idioma" src="{{ .Site.BaseURL }}/images/btns/english.png" title="english"/></a></li>
-        </ul></li>
+      <li class="has-sub">
+        <a href="#pt-br" target="_parent" data-toggle="dropdown"  target="_parent">
+          <img class="idioma" src="{{ "images/btns/portuguese.png" | absURL }}" title="portuguese"/></a>
+          <ul>
+            <li>
+              <a href="https://medium.com/@matheuslaidler" target="_blank">
+                <img class="idioma" src="{{ .Site.BaseURL }}/images/btns/english.png" title="english"/></a>
+            </li>
+          </ul>
+      </li>
           <li class="no-arrow">
             <svg width="60" height="20" fill="none" stroke-width="3" stroke-linecap="round"
               stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
@@ -129,5 +134,6 @@
         </div>
       </div>
     </div>
+  
   </header>
 </div>
