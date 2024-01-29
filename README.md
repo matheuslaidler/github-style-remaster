@@ -2,6 +2,10 @@
 Modified version of the Hugo theme, Github-Style, to fit my personal static pages theme
 
  - If you want to modify my menu, u can go on and edit the html file: 'layouts/partials/header.html'
+
+>Please, do NOT use my images;
+
+>Favor, NÃO utilizar minhas imagens;
  
 # Sobre // About
 
