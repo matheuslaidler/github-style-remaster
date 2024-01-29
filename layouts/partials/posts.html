@@ -1,80 +1,83 @@
 {{ define "posts" }}
 <div>
     <div class="position-relative">
+      
       <div>
-        
+                {{ if eq .Type "post" }}
+                <div class="TableObject-item text-right v-align-top">
+                  <p><a class="issues-reset-query text-normal d-inline-block ml-3" href="/tags/">👽</a>
+                  </p>
+                    <!-- categorias imagem
+                    <a class="issues-reset-query text-normal d-inline-block ml-3" href="/categories/">
+                      <img width="75%" src="{{ .Site.BaseURL }}/images/projects/projects.png"/>
+                    </a>
+                  -->
+                 <center>
+                  <a href="/categories/road2technology/">
+                    <img width="110vh" src="{{ .Site.BaseURL }}/images/projects/road2tech.png"/>
+                  </a>
+                  <a href="/categories/wayofsecurity/">
+                    <img width="130vh" src="{{ .Site.BaseURL }}/images/projects/wayofsec_logo.png"/>
+                  </a>  
+                  <a href="/categories/seclab/">
+                    <img width="100vh" src="{{ .Site.BaseURL }}/images/projects/seclab.png"/>
+                  </a>
+                  <p></p>
+                    <em class="issues-reset-query text-normal d-inline-block ml-3">Projeto de finalidade acadêmica e sem fins lucrativos</em>
+                  </center> 
+                           
+                   </div>
+                   {{ end }}
                 {{ if eq .Type "categories" }}
             <div class="position-relative">
               <div>
                 <div class="TableObject border-bottom border-gray-light py-3">
                   <div class="user-repo-search-results-summary TableObject-item TableObject-item--primary v-align-top">
-                    <center>Projeto de finalidade acadêmica, sem fins lucrativos.</center>
+                    
                     {{ if .Params.title }}
+
+                    <div class="TableObject-item text-right v-align-top">
+                      <center><a class="issues-reset-query text-normal d-inline-block ml-3" href="/categories/">Categorias</a>
+                      <p></center>
+                    </div>
 					
-                  <center><em>Abaixo, <strong>{{ len .Pages }}</strong> post(s) do projeto "<strong>{{ .Params.title }}</strong>"</em></center>
-                    {{ else }} <center><em> Abaixo, todos as <strong>{{ len .Pages }}</strong> categorias.</em></center>
+                  <center><em>Filtrando <strong>{{ len .Pages }}</strong> post(s) em "<strong>{{ .Params.title }}</strong>"</em></center>
+                    {{ else }} <center><em> Filtrando todas as <strong>{{ len .Pages }}</strong> categorias.</em> <br> (<em>Áreas de TI</em>)</center>
                     
                    {{ end }}
                   </div>
 
                   <div class="TableObject-item text-right v-align-top">
-                 <!--   <center><a class="issues-reset-query text-normal d-inline-block ml-3" >Acesso Rápido</a>
-                    </center> -->
-
+                 <center><a class="issues-reset-query text-normal d-inline-block ml-3" href="/tags/">Tags</a></center>
                <p>
-                <center><a class="issues-reset-query text-normal d-inline-block ml-3" href="/categories/road2technology">
-                        TI
-                      </a>
-                      <a class="issues-reset-query text-normal d-inline-block ml-3" href="/categories/development">
-                        Dev
-                        </a>
-                        <a class="issues-reset-query text-normal d-inline-block ml-3" href="/categories/wayofsecurity/">
-                        Segurança
-                      </a>  <p>
-                      <a class="issues-reset-query text-normal d-inline-block ml-3" href="/categories/forense/">
-                        Forense
-                      </a>
-                      <a class="issues-reset-query text-normal d-inline-block ml-3" href="/categories/operating-system/">
-                        Sistema Operacional
-                      </a>
-                          </center> 
                   </div>
                 </div>
 
               {{ end }}
+              
 
                 <div class="position-relative">
+                  
                   <div>
                     {{ if eq .Type "tags" }}
                     <div class="TableObject border-bottom border-gray-light py-3">
                       <div class="user-repo-search-results-summary TableObject-item TableObject-item--primary v-align-top">
-                        <center>Projeto de finalidade acadêmica, sem fins lucrativos.</center>
                       {{ if .Params.title }}
-                      <center><em>Abaixo, <strong>{{ len .Pages }}</strong> post(s) de "<strong>{{ .Params.title }}</strong>"</em></center>
 
-                      {{ else }} <center>Abaixo, todas os <strong>{{ len .Pages }}</strong> temas e <em>palavras chave</em>.</center>
+                      <div class="TableObject-item text-right v-align-top">
+                        <center><a class="issues-reset-query text-normal d-inline-block ml-3" href="/tags/">Todas as Tags</a>
+                        <p></center>
+                      </div>
+
+                      <center><em>Filtrando <strong>{{ len .Pages }}</strong> post(s) de "<strong>{{ .Params.title }}</strong>"</em></center>
+
+                      {{ else }} <center>Filtrando todos os <strong>{{ len .Pages }}</strong> temas <br> (<em>Palavras Chave</em>)</center>
+                      
                        {{ end }}
                       </div>
                       <div class="TableObject-item text-right v-align-top">
-                       
-						
+                        <center><a class="issues-reset-query text-normal d-inline-block ml-3" href="/categories/">Categorias</a></center>
                         <p>
-                  <center><a class="issues-reset-query text-normal d-inline-block ml-3" href="/tags/WriteUps">
-                          CTF/WriteUp
-                        </a>
-                          <a class="issues-reset-query text-normal d-inline-block ml-3" href="/tags/programacao/">
-                          Programação
-                        </a>  <p>
-                        <a class="issues-reset-query text-normal d-inline-block ml-3" href="/tags/redes/">
-                          Redes
-                        </a>
-                        <a class="issues-reset-query text-normal d-inline-block ml-3" href="/tags/linux/">
-                          Linux
-                        </a>
-						<a class="issues-reset-query text-normal d-inline-block ml-3" href="/tags/hacking">
-                          Hacking
-                          </a>
-                  </center>
                       </div>
                     </div>
                     {{ end }}
