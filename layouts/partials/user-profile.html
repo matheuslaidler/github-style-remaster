@@ -22,7 +22,7 @@
             {{ with $.Site.Params.avatar }}
             <a href="#">
               <img style="height:auto;" alt="Avatar" width="260" height="260" id="headerImg"
-                class="avatar avatar-user width-full border bg-white" src="{{ $.Site.Params.avatar }}">
+                class="avatar avatar-user width-full border bg-white" src="{{ $.Site.Params.avatar }}"> <!-- Profile -->
             </a>
             {{ else }}
             <a href="{{ "images/avatar.png" | absURL }}">
