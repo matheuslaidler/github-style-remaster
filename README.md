@@ -10,6 +10,8 @@ Modified version of the Hugo theme, Github-Style, to fit my personal static page
 ### Download 
 Check our release to download the latest zip file version.
 
+You can try first to install the original theme and then change the files.
+
 Or click [here](https://github.com/matheuslaidler/github-style-remaster/releases/tag/download)
  
 # Sobre // About
