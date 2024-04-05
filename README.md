@@ -6,6 +6,11 @@ Modified version of the Hugo theme, Github-Style, to fit my personal static page
 >Please, do NOT use my images;
 
 >Favor, NÃO utilizar minhas imagens;
+
+### Download 
+Check our release to download the latest zip file version.
+
+Or click [here](https://github.com/matheuslaidler/github-style-remaster/releases/tag/download)
  
 # Sobre // About
 
