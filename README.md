@@ -1,11 +1,7 @@
 # Github MLaidler Style - Remaster Hugo Theme
-Modified version of the Hugo theme, Github-Style, to fit my personal static pages theme
+Modified version of the Hugo theme, Github-Style, to fit my personal static pages theme - 'repository just to save this'
 
  - If you want to modify my menu, u can go on and edit the html file: 'layouts/partials/header.html'
-
->Please, do NOT use my images;
-
->Favor, NÃO utilizar minhas imagens;
 
 ### Download 
 Check our release to download the latest zip file version.
@@ -13,6 +9,9 @@ Check our release to download the latest zip file version.
 You can try first to install the original theme and then change the files.
 
 Or click [here](https://github.com/matheuslaidler/github-style-remaster/releases/tag/download)
+
+You can just follow the original theme tutorial to install:
+https://github.com/MeiK2333/github-style
  
 # Sobre // About
 
@@ -38,8 +37,6 @@ You can use those command lines with something like Win Powershell or any Linux 
 
 Tutorial same as github-style - almost
 
-Tutorial igual para github-style original... porém, add / modifiquei algumas coisas. - estará em inglês;
-
 ## Init hugo site
 
 ```bash
@@ -49,57 +46,32 @@ cd mysite
 
 ## Install the theme
 
-Installing as submodule:
+Installing as submodule can be done with the original theme tutorial
+
+You can download and drag the folder "github-style" to "themes".
 
 ```bash
-git submodule add git@github.com:matheuslaidler/github-style-remaster.git themes/github-style-remaster
-```
-
-or download and drag the folder "github-style" to "themes".
-
-If you're inside your hugo's root folder with command...
-
-You can just go to the 'themes' folder and clone this repository inside.
-
-```bash
-cd themes
 git clone https://github.com/matheuslaidler/github-style-remaster.git
 ```
 
-PS: Rename your previous `posts` folder to `post` to use our theme - inside `content`
+PS: Rename your previous `posts` folder to `post` to use our theme - inside `content` 
 
 ```bash
 cd <you-project-folder>
 mv content/posts content/post
 ```
+ - if you have just the content folder: `hugo new post/teste.md` to create a post with the right folder
+
 
 ## Setting your hugo theme
 
-Edit your config.toml / hugo.toml
+Edit your hugo.toml
 
 Edit/Add the "theme" value;
 
-`theme = "github-style-remaster"`
+`theme = "github-style`
 
 -- don't forget to add your url on 'baseURL'
-
-## Update the theme (not needed)
-
-If you just installed the theme, it is already in the latest version. If not, you can update using the below commands
-
-```bash
-cd themes/github-style-remaster
-git pull
-```
-
-If you installed the theme as a submodule;
-
-```bash
-# Update to the latest version
-git submodule update --remote
-```
-
-Then see if needed to rename the previous `posts` folder to `post` again.
 
 ## Setup readme
 
@@ -114,14 +86,6 @@ echo '`Hello World!`' > content/readme.md
 hugo server -D
 ```
 (or just hugo server)
-
-## Add new post
-
-Hugo will create a post with `draft: true`, change it to false in order for it to show in the website.
-
-```
-hugo new post/title_of_the_post.md
-```
 
 ## Pin post
 
@@ -161,7 +125,7 @@ other content
 
 ## Add last modified date
 
-add to `config.toml`
+add to `hugo.toml`
 
 ```toml
 lastmod = true
@@ -218,63 +182,6 @@ you can add MathJax:true to frontmatter
 ```
 mathJax: true
 ```
-## config.toml or hugo.toml example
-
-```toml
-baseURL = 'https://matheuslaidler.github.io'
-languageCode = 'pt-BR'
-title = 'Github M.Laidler Style'
-theme = "github-style-remaster"
-googleAnalytics = "UA-123456-789"
-pygmentsCodeFences = true
-pygmentsUseClasses = true
-
-		
-[params]
-  author = "Matheus Laidler"
-  description = "Projeto que auxilia no aprendizado de conteúdos via divulgação científica, com materiais sobre o mundo da tecnologia e hacking."
-  avatar = "/images/perfil.jpg" #or ../../images/perfil.jpg
-  github = "matheuslaidler"
-  facebook = "matheus.laidler"
-  twitter = "matheuslaidler"
-  linkedin = "laidlervidal"
-  instagram = "matheuslaidler"
-  #tumblr = "#"
-  youtube = "@matheuslaidler" #/channel/UCkFbbZX6TG6eZPugmW32YFA/
-  email = "matheuslaidler@protonmail.com"
-  url = "https://matheuslaidler.github.io" #se não colocar ficará como o link do site raiz
-  keywords = "matheus laidler, matheuslaidler, matheus-laidler, mlaidler, cibersegurança, wayofsecurity, wayofsec, road2tech, road2technology, acervo de TI, artigos, write ups, blog"
-  rss = false
-  lastmod = true
-  favicon = "images/terminal.png"
-  location = "Brazil"
-  userStatusEmoji = "👽"
-  enableGitalk = true
-    
-  [params.gitalk]
-    clientID = "Your client ID" # Your client ID
-    clientSecret = "Your client secret" # Your client secret
-    repo = "LuvSia" # 您的博客的github地址Repository name，例如：xxxx.github.io
-    owner = "ventusoon" # 您的GitHub ID
-    admin = "ventusoon" # 您的GitHub ID
-    id = "location.pathname" # 文章页面的链接地址就是ID
-    labels = "gitalk" # Github issue labels. If you used to use Gitment, you can change it
-    perPage = 15 # Pagination size, with maximum 100.
-    pagerDirection = "last" # Comment sorting direction, available values are 'last' and 'first'.
-    createIssueManually = true # 设置为true，如果是管理员登录，会自动创建issue，如果是false，需要管理员手动添加第一个评论(issue)
-    distractionFreeMode = false # Enable hot key (cmd|ctrl + enter) submit comment.    
-    proxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token" # 可以自行添加反向代理
-  
-  [[params.links]] #um icone novo para algo - abaixo do perfil
-    title = "Rascunhos"
-    href = "https://matheuslaidler.gitbook.io"
-	# icon = "images/icone.png" #sem nada => icone padrão de link => "/images/link.png"
-
-
-  [frontmatter]
-    lastmod = ["lastmod", ":fileModTime", ":default"]
-
-```
 
 ## Support collapsible block
 
@@ -295,44 +202,6 @@ And it will show like this:
   <p>block content</p>
 </details>
 
-## deploy.sh example
-
-There are various way to deploy to github, here is a link to official [document](https://gohugo.io/hosting-and-deployment/hosting-on-github/).
-
-Here is an sample. Note line 22 have `env HUGO_ENV="production"`, makes sure googleAnalysis is loaded during production, but is not loaded when we are testing it in localhost.
-
-```bash
-#!/bin/sh
-
-if [ "`git status -s`" ]
-then
-    echo "The working directory is dirty. Please commit any pending changes."
-    exit 1;
-fi
-
-echo "Deleting old publication"
-rm -rf public
-mkdir public
-git worktree prune
-rm -rf .git/worktrees/public/
-
-echo "Checking out gh-pages branch into public"
-git worktree add -B gh-pages public origin/gh-pages
-
-echo "Removing existing files"
-rm -rf public/*
-
-echo "Generating site"
-env HUGO_ENV="production" hugo -t github-style-remaster
-
-echo "Updating gh-pages branch"
-cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
-
-#echo "Pushing to github"
-#git push --all
-```
-
-Then you can verify the site is working and use `git push --all` to push the change to github. If you don't want to check again every time, you can uncomment the `#git push --all` in the script.
 
 ## Credits
 
