@@ -69,7 +69,7 @@ Edit your hugo.toml
 
 Edit/Add the "theme" value;
 
-`theme = "github-style`
+`theme = "github-style"`
 
 -- don't forget to add your url on 'baseURL'
 
