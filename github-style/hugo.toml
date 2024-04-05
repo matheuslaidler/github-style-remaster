@@ -1,0 +1,47 @@
+baseURL = ''
+languageCode = 'pt-BR'
+title = 'Hugo Github Style Remaster'
+theme = "github-style-remaster"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+		
+[params]
+  author = "Matheus Laidler"
+  description = "Hugo Remade Theme"
+  avatar = "../../images/perfil.jpg"
+  github = "matheuslaidler"
+  medium = "matheuslaidler"
+  gitbook = "matheuslaidler"
+  #stackoverflow = "23312896"
+  instagram = "matheuslaidler"
+  youtube = "/channel/UCkFbbZX6TG6eZPugmW32YFA/"
+  gitlab = "matheuslaidler"
+  linkedin = "laidlervidal"
+  email = "matheuslaidler@protonmail.com"
+  url = "https://gitlab.com/matheuslaidler" #se não colocar ficará como o link do site raiz
+  keywords = "matheus laidler, matheuslaidler, matheus-laidler, mlaidler, hugo, hugo theme, github-style, github style, github style remaster, github hugo theme"
+  rss = false
+  lastmod = true
+  favicon = "images/terminal.png"
+  location = "Brazil"
+  userStatusEmoji = ">_"	#💲 👽 🇲🇱 😀		💻(laptop)	🤖(robo)	👨‍💻(tecnologo)	🖱️(mouse)	🖥️(monitor)	🌐(globo meridianos)	📁(pastas)	📃(pagina)	🤓(nerd)	💀(caveira)	😊(sorriso2)	❤️(coração)	🏡(home)	🎖️(medalha)	😎 (oculos)	👻(fantasma)	👽(alien)	😜	🙃	🤨	😌	😁 	🎃	🤙	👋	✍️	🧠	👁	👀	👌	🧑	🕵️‍♂️	👨‍🏫	👤	🤵🏻	🕵🏻‍♂️	❄️	🌎	🔥	⌨️	💎	🔬	🇲🇱 🧠
+  enableGitalk = true
+    
+  [params.gitalk]
+    clientID = "" # Your client ID 
+    clientSecret = "" # Your client secret 
+    repo = "" # matheuslaidler.github.io/blog - # 您的博客的github地址Repository name，例如：xxxx.github.io
+    owner = "" #  您的GitHub ID
+    admin = "" #  您的GitHub ID
+    id = "location.pathname" #  文章页面的链接地址就是ID
+    labels = "gitalk" # Github issue labels. If you used to use Gitment, you can change it
+    perPage = 15 # Pagination size, with maximum 100.
+    pagerDirection = "last" # Comment sorting direction, available values are 'last' and 'first'.
+    createIssueManually = true # 设置为true，如果是管理员登录，会自动创建issue，如果是false，需要管理员手动添加第一个评论(issue)
+    distractionFreeMode = false # Enable hot key (cmd|ctrl + enter) submit comment.    
+    proxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token" # 可以自行添加反向代理
+
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
