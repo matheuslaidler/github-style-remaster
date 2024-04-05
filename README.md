@@ -53,7 +53,7 @@ Installing as submodule:
 git submodule add git@github.com:matheuslaidler/github-style-remaster.git themes/github-style-remaster
 ```
 
-or download and drag the folder "github-style-remaster" to "themes".
+or download and drag the folder "github-style" to "themes".
 
 If you're inside your hugo's root folder with command...
 
